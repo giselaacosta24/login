@@ -1,0 +1,11 @@
+<router-outlet></router-outlet> 
+<h2> {{title}} </h2>
+
+<input type="{{mitipo}}" [(ngModel)]="title">
+<input type="button" (click)="mostrarAlert()" value="cambiar">
+<br>Suma de :
+<br><input type="number" [(ngModel)]="num1"><br>
+<br> y de :
+<input type="number" [(ngModel)]="num2">
+<input type="button" (click)="sumar()" value="calcular">
+<br>El resultado es {{resultado}}

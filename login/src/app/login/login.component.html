@@ -1,29 +1,16 @@
-<!DOCTYPE>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="row">
-      <h2 style="text-align:center"></h2>
+    <header>
+        <h1>Portal de Login</h1>
+    </header>
+     <main>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Login:</label>
+                <input class="field_class" name="login_txt" type="text"  [(ngModel)]="miUsuario.correo" placeholder="Ingrese usuario" autofocus>
+                <label>Password:</label>
+                <input class="field_class" name="password_txt" [(ngModel)]="miUsuario.contrasena"  type="password" placeholder="Ingrese contraseña">
+                <button class="submit_class"  form="login_form" (click)="entrar()">Entrar</button>
+            </div>
+        
+        </form>
+    </main>
  
-
-      <div class="success" >
-        <h3>Bienvenido </h3>
-        <button  class="btn btn-success btn-md">
-          Salir
-        </button>
-      </div>
-    </div>
-    
- 
-  </div>
-
-</body>
-
-</html>
